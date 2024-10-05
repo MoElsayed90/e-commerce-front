@@ -5,6 +5,8 @@ import Home from '@pages/Home';
 import Categories from '@pages/Categories';
 import Products from '@pages/Products';
 import AboutUs from '@pages/AboutUs';
+import SignIn from '@pages/SignIn';
+import Register from '@pages/Register';
 const AppRoutes = () => {
   const router = createBrowserRouter([
   {
@@ -26,7 +28,15 @@ const AppRoutes = () => {
     {
       path:"about-us",
       element:<AboutUs/>
-    }
+    },
+    {
+      path:"sign-in",
+      element:<SignIn/>
+    },
+    {
+      path:"register",
+      element:<Register/>
+    },
   ]
 }
 ])
